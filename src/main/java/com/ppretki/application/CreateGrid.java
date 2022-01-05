@@ -49,7 +49,7 @@ public class CreateGrid {
                 .tenantId(new TenantId(String.valueOf(rand.nextInt(20))))
                 .id(randomString())
                 .build();
-        val entity = EntityWithArea.builder()
+        return EntityWithArea.builder()
                 .entityId(folderId)
                 .area(new Area(center, radius))
                 .description(randomString())
